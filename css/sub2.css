@@ -1,0 +1,319 @@
+@charset "utp-8";
+@font-face {
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol {
+    list-style: none;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    font-family: 'SCoreDream';
+    font-size: 14px;
+    line-height: 24px;
+    color: #041a2f;
+    min-width:1350px;
+} 
+
+#header {
+    background-color: rgba(255,255,255,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+}
+#header-inner {
+    margin: 0 auto;
+    width: 1320px;
+}
+#logo {
+    float: left;
+    width: 55px;
+    margin-left: 30px;
+    margin-top: 4px;
+}
+#logo img {
+    width: 100%;
+}
+#gnb {
+    float: right;
+}
+#gnb li {
+    float: left;
+    padding: 20px 15px;
+    font-family: 'LeeSeoyun';
+    font-size: 18px;
+    font-weight: 700;
+    transform: skew(-0.1deg);
+}
+
+#title {
+    height: 461px;
+    margin-top: 64px;
+}
+#title img {
+    float: right;
+    width: 80%;
+    margin-top: 80px;
+}
+
+#keyword {
+    background-color: #d5f3e3;
+    height: 631px;
+}
+#keyword-inner {
+    margin: 0 auto;
+    width: 1320px;
+    padding-top: 70px;
+    padding-bottom: 78px;
+}
+.img img {
+    width: 100%;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.text1 {
+    width: 694px;
+    padding-left: 218px;
+    box-sizing: border-box;
+}
+.text1 h1 {
+    font-family: 'LeeSeoyun';
+    font-size: 60px;
+    line-height: 56px;
+    font-weight: normal;
+    margin-bottom: 42px;
+}
+.text1 p {
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: 300;
+}
+.text1 .ps {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+#choice {
+    margin-top: 106px;
+    background-color: #f3edba;
+    height: 632px;
+    position: relative;
+}
+#choice-inner {
+    margin: 0 auto;
+    width: 1320px;
+}
+.text2 {
+    margin-top: 130px;
+    margin-bottom: 137px;
+}
+.text2 h1 {
+    font-family: 'LeeSeoyun';
+    font-size: 60px;
+    line-height: 56px;
+    font-weight: normal;
+    margin-bottom: 86px;
+}
+.text2 p {
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: 300;
+}
+#choice .img {
+    width: 286px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-right: 130px;
+}
+#choice .stiker {
+    position: absolute;
+    bottom: -10%;
+    right: 38%;
+
+}
+
+#free {
+    margin-top: 106px;
+    background-color: #ddcbec;
+    height: 631px;
+    position: relative;
+}
+#free-inner {
+    margin: 0 auto;
+    width: 1320px;
+}
+#free-inner .img {
+    position: absolute;
+    bottom: -10%;
+}
+.text3 {
+    margin-top: 106px;
+    margin-bottom: 122px;
+}
+.text3 h1 {
+    font-family: 'LeeSeoyun';
+    font-size: 60px;
+    line-height: 56px;
+    font-weight: normal;
+    margin-bottom: 67px;
+}
+.text3 p {
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: 300;
+}
+
+#app {
+    margin-top: 106px;
+    background-color: #abc7f2;
+    height: 630px;
+}
+#app-inner {
+    margin: 0 auto;
+    width: 1320px;
+}
+.text4 {
+    margin-top: 89px;
+
+}
+.text4 h1 {
+    font-family: 'LeeSeoyun';
+    font-size: 60px;
+    line-height: 56px;
+    font-weight: normal;
+    margin-bottom: 75px;
+}
+.text4 p {
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: 300;
+}
+.text4 a {
+    margin-top: 70px;
+    display: flex;
+    flex-flow: row;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 300;
+    vertical-align: middle;
+}
+.text4 a img {
+    margin-right: 10px;
+    margin-top: 7px;
+    height: 60px;
+}
+#app-inner .img {
+    margin-top: 154px;
+}
+
+#other {
+    margin-top: 106px;
+    background-color: #fff;
+    background: url(./../images/sub2/bg.png)no-repeat center bottom;
+    height: 2080px;
+
+}
+#other-inner {
+    margin: 0 auto;
+    width: 1320px;
+    position: relative;
+}
+.mini1 {
+    position: absolute;
+    top: 94px;
+    left: 78px;
+}
+.mini1 h2 {
+    position: absolute;
+    top: 45px;
+    left: 36px;
+}
+.mini2 {
+    position: absolute;
+    top: 190px;
+    right: 80px;
+}
+.mini2 h2 {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+.mini3 {
+    position: absolute;
+    top: 800px;
+    left: 80px;
+}
+.mini3 h2 {
+    position: absolute;
+    top: 49px;
+    left: 40px;
+}
+.mini4 {
+    position: absolute;
+    top: 960px;
+    right: 135px;
+}
+.mini4 h2 {
+    position: absolute;
+    top: 49px;
+    left: 30px;
+}
+#other-inner ul li h2 {
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 500;
+}
+
+#footer {
+    background: url(./../images/footer-back.png) repeat;
+    height: 262px;
+}
+#footer-inner {
+    margin: 0 auto;
+    width: 1320px;
+    font-weight: 300;
+    position: relative;
+}
+#footer-inner ul li {
+    float: left;
+    padding: 35px 10px 25px 10px;
+}
+#footer-inner ul li:nth-child(1) {
+    padding-left: 0;
+}
+#footer-inner p {
+    padding-bottom: 15px;
+}
+#footer-inner .app-download {
+    position: absolute;
+    right: 3%;
+    top: 12%;
+   width: 190px;
+}
+#footer-inner .app-download img {
+    width: 45%;
+    vertical-align: middle;
+    margin-left: 20px;
+}

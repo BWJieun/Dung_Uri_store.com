@@ -1,0 +1,422 @@
+@charset "utp-8";
+@font-face {
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol {
+    list-style: none;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    font-family: 'SCoreDream';
+    font-size: 14px;
+    line-height: 24px;
+    color: #041a2f;
+    min-width:1350px;
+} 
+
+#header {
+    background-color: rgba(255,255,255,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+}
+#header-inner {
+    margin: 0 auto;
+    width: 1320px;
+}
+#logo {
+    float: left;
+    width: 55px;
+    margin-left: 30px;
+    margin-top: 4px;
+}
+#logo img {
+    width: 100%;
+}
+#gnb {
+    float: right;
+}
+#gnb li {
+    float: left;
+    padding: 20px 15px;
+    font-family: 'LeeSeoyun';
+    font-size: 18px;
+    font-weight: 700;
+    transform: skew(-0.1deg);
+}
+
+#search {
+    margin-top: 166px;
+    margin-bottom: 68px;
+
+}
+#search-inner {
+    margin: 0 auto;
+    width: 1320px;
+}
+.search {
+    float: right;
+}
+.search input {
+    color: #808080;
+    text-align: center;
+    background: url(./../images/sub4/search.png) no-repeat;
+    font-size: 14px;
+    line-height: 16.8px;
+    font-weight: 200;
+    border: none;
+    width: 320px;
+    height: 30px;
+}
+.search input:focus {
+    outline: none;
+}
+
+#title img {
+    width: 100%;
+}
+
+#book-tab {
+    margin: 0 auto;
+    width: 1320px;
+    text-align: center;
+}
+#book-tab h1{
+    font-size: 36px;
+    font-family: 'LeeSeoyun';
+    text-align: left;
+    margin-top: 167px;
+    padding-bottom: 36px;
+}
+.tab {
+    overflow: hidden;
+    float: left;
+}
+.tab li a{
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    width: 330px;
+    height: 110px;
+    padding: 48px 0;
+    box-sizing: border-box;
+    background-color: #d1c7c4;
+    color: #041a2f;
+    transition:0.3s;
+}
+.tabcontent {
+    float: right;
+    display: none;
+    background: url(./../images/sub4/book-bg.jpg) no-repeat;
+    width: 990px;
+    height: 769px;
+}
+.tab .current a {
+    background-color: #041a2f;
+    color: #fff;
+}
+.tabcontent.current {
+    display: block;
+}
+.book {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    margin-top: 163px;
+}
+.book img {
+    display: block;
+    height: 321px;
+    overflow: hidden;
+}
+.book li h3 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    padding-top: 44px;
+}
+.book li p {
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 23px;
+}
+
+#keyword {
+    margin-top: 226px;
+}
+#key-inner {
+    width: 1320px;
+    margin: 0 auto;
+
+}
+#key-inner h1 {
+    font-size: 36px;
+    line-height: 36px;
+    font-family: 'LeeSeoyun';
+}
+#key-inner p {
+    font-weight: 500;
+    padding-top: 33px;
+    padding-bottom: 23px;
+}
+.country {
+    background: url(./../images/sub4/keyword1.png) no-repeat;
+    height: 220px;
+    margin-bottom: 63px;
+}
+.genre {
+    background: url(./../images/sub4/keyword2.png) no-repeat;
+    height: 312px;
+    margin-bottom: 63px;
+}
+.amb {
+    background: url(./../images/sub4/keyword3.png) no-repeat;
+    height: 422px;
+    margin-bottom: 63px;
+}
+.amb ul.ks-cboxtags {
+    padding-top: 150px;
+}
+.grade {
+    background: url(./../images/sub4/keyword4.png) no-repeat;
+    height: 258px;
+    margin-bottom: 63px;
+}
+ul.ks-cboxtags {
+    padding-top: 130px;
+    padding-left: 110px;
+}
+ul.ks-cboxtags li{
+  display: inline;
+}
+ul.ks-cboxtags li label{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: #eee;
+    color: #041a2f;
+    border-radius: 25px;
+    white-space: nowrap;
+    margin: 3px 0px 25px 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li label {
+    padding: 10px 25px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+ul.ks-cboxtags li label::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    padding: 2px 6px 2px 2px;
+    transition: transform .3s ease-in-out;
+}
+
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+    border: 1px solid #041a2f;
+    background-color: #041a2f;
+    color: #eee;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+  display: absolute;
+}
+ul.ks-cboxtags li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+#submit {
+    font-size: 24px;
+    font-weight: 300;
+    color: white;
+    background-color: #041a2f;
+    border-radius: 30px;
+    text-align: center;
+    display: block;
+    width: 300px;
+    padding: 20px;
+    margin-left: 450px;
+}
+
+#hot {
+    margin-top: 166px;
+}
+#hot-inner {
+    margin: 0 auto;
+    width: 1320px;
+}
+#hot-inner h1 {
+    font-size: 36px;
+    line-height: 36px;
+    font-family: 'LeeSeoyun';
+    padding-bottom: 23px;
+}
+.hotBook {
+    height: 800px;
+}
+.hotBook img {
+    width: 100%;
+}
+
+#recommend {
+    margin-top: 136px;
+}
+#reco-inner {
+    margin: 0 auto;
+    width: 1320px;
+}
+#reco-inner h1 {
+    font-size: 36px;
+    line-height: 36px;
+    font-family: 'LeeSeoyun';
+    padding-bottom: 23px;
+}
+.title{
+    overflow:hidden;
+    background-color: #d1c7c4;
+    font-family: 'LeeSeoyun';
+    font-size: 36px;
+    font-weight: 200;
+    margin-bottom: 70px;
+}
+.title_in{
+    float:left;
+    margin-left: 10px;
+    padding: 20px 10px;
+}
+.arrow{
+    float:right;
+	margin-right:10px;
+    padding: 20px 10px;
+}
+.arrow img {
+    transform: rotate(90deg);
+}
+.reco-book {
+    clear: both;
+    padding:10px;
+	display:none;
+    position: relative;
+}
+.reco-book img{
+    display: inline-block;
+    margin-left: 166px;
+    margin-top: 50px;
+    margin-bottom: 122px;
+}
+.reco-bg1{
+	background: #4e592f;
+}
+.reco-bg2 {
+	background: #d8cf8c;
+}
+
+.turn .arrow img{transform:rotate(0deg);}
+.arrow img{transition:transform 0.5s;}
+
+.reco-text {
+    font-family: 'SCoreDream';
+}
+.t1 {
+    position: absolute;
+    top: 138px;
+    left: 585px;
+}
+.t2 {
+    position: absolute;
+    top: 158px;
+    left: 585px;
+}
+.reco-text h2  {
+    font-size: 36px;
+    font-weight: 600;
+    padding-bottom: 42px;
+}
+.reco-text p {
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 400;
+}
+.reco-text .red {
+    color: #e64360;
+}
+.reco-text a {
+    display: block;
+    width: 266px;
+    border-radius: 18.5px;
+    padding: 7px 20px;
+    margin-top: 22px;
+    background-color: #041a2f;
+    color: #fff;
+    text-align: center;
+    font-family: 'LeeSeoyun';
+}
+.t2 a {
+    margin-top: 44px;
+}
+
+#footer {
+    background: url(./../images/footer-back.png) repeat;
+    height: 262px;
+}
+#footer-inner {
+    margin: 0 auto;
+    width: 1320px;
+    font-weight: 300;
+    position: relative;
+}
+#footer-inner ul li {
+    float: left;
+    padding: 35px 10px 25px 10px;
+}
+#footer-inner ul li:nth-child(1) {
+    padding-left: 0;
+}
+#footer-inner p {
+    padding-bottom: 15px;
+}
+#footer-inner .app-download {
+    position: absolute;
+    right: 3%;
+    top: 12%;
+   width: 190px;
+}
+#footer-inner .app-download img {
+    width: 45%;
+    vertical-align: middle;
+    margin-left: 20px;
+}

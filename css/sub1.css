@@ -1,0 +1,241 @@
+@charset "utp-8";
+@font-face {
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol {
+    list-style: none;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    font-family: 'SCoreDream';
+    font-size: 14px;
+    line-height: 24px;
+    color: #041a2f;
+    min-width:1350px;
+} 
+
+#header {
+    background-color: rgba(255,255,255,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+}
+#header-inner {
+    margin: 0 auto;
+    width: 1320px;
+}
+#logo {
+    float: left;
+    width: 55px;
+    margin-left: 30px;
+    margin-top: -2px;
+}
+#logo img {
+    width: 100%;
+}
+#gnb {
+    float: right;
+}
+#gnb li {
+    float: left;
+    padding: 20px 15px;
+    font-family: 'LeeSeoyun';
+    font-size: 18px;
+    font-weight: 700;
+    transform: skew(-0.1deg);
+}
+
+#title {
+    height: 461px;
+    margin-top: 64px;
+}
+#title img {
+    float: right;
+    width: 80%;
+    margin-top: 80px;
+}
+
+#container {
+    background: url(./../images/sub1/bg.jpg) no-repeat;
+    height: 4558px;
+}
+#container-inner {
+    margin: 0 auto;
+    width: 1320px;
+}
+.start {
+    height: 1585px;
+    position: relative;
+}
+.start img {
+    width: 80%;
+    position: absolute;
+    top: 620px;
+    left: -22%;
+}
+.start p {
+    font-size: 16px;
+    line-height: 60px;
+    position: absolute;
+    top: 770px;
+    left: 270px;
+}
+
+#taget {
+    margin-top: 20px;
+    height: 1500px;
+    position: relative;
+}
+#taget h1 {
+    font-size: 48px;
+    font-weight: 500;
+    color: #fff;
+    text-align: right;
+    padding-right: 182px;
+}
+#taget .people1 {
+    position: absolute;
+    top: 7%;
+    left: 4%;
+}
+#taget .people2 {
+    position: absolute;
+    top: 29%;
+    right: -1%;
+}
+#taget .people3 {
+    position: absolute;
+    top: 58%;
+    right: 15%;
+}
+#taget ul li p{
+    font-size: 24px;
+    line-height: 46.7px;
+    text-align: center;
+}
+#taget .people1 p {
+    position: absolute;
+    top: 6%;
+    left: 51%;
+}
+#taget .people2 p {
+    position: absolute;
+    top: 5%;
+    right: 62%;
+}
+#taget .people3 p {
+    position: absolute;
+    top: 5%;
+    left: 6%;
+}
+
+#brand-logo {
+    margin-top: 153px;
+    height: 1150px;
+    position: relative;
+}
+#brand-logo h1 {
+    font-size: 48px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+#brand-logo .book1 {
+    background: url(./../images/sub1/open-book2.png) no-repeat;
+    width: 809px;
+    height: 743px;
+    position: absolute;
+    top: 9%;
+    left: 17%;
+}
+#brand-logo .book1 ul {
+    float: left;
+}
+#brand-logo .book1 ul li {
+    padding-bottom: 70px;
+}
+#brand-logo .book1 .color {
+    position: absolute;
+    top: 17%;
+    left: 15%;
+}
+#brand-logo .book1 .black {
+    position: absolute;
+    top: 17%;
+    right: 15%;
+}
+
+#brand-logo .book2 {
+    background: url(./../images/sub1/open-book3.png) no-repeat;
+    width: 849px;
+    height: 713px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#brand-logo .book2 .book2-text {
+    position: absolute;
+    top: 10%;
+    left: 13%;
+}
+#brand-logo .book2-text p {
+    line-height: 60px;
+}
+.book2-text .jump-p {
+    padding-top: 50px;
+}
+#brand-logo .book2-text .code {
+    padding-left: 95px;
+    line-height: 40px;
+}
+
+#footer {
+    background: url(./../images/footer-back.png) repeat;
+    height: 262px;
+}
+#footer-inner {
+    margin: 0 auto;
+    width: 1320px;
+    font-weight: 300;
+    position: relative;
+}
+#footer-inner ul li {
+    float: left;
+    padding: 35px 10px 25px 10px;
+}
+#footer-inner ul li:nth-child(1) {
+    padding-left: 0;
+}
+#footer-inner p {
+    padding-bottom: 15px;
+}
+#footer-inner .app-download {
+    position: absolute;
+    right: 3%;
+    top: 12%;
+   width: 190px;
+}
+#footer-inner .app-download img {
+    width: 45%;
+    vertical-align: middle;
+    margin-left: 20px;
+}

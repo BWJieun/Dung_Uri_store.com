@@ -1,0 +1,350 @@
+@charset "utp-8";
+@font-face {
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol {
+    list-style: none;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    font-family: 'SCoreDream';
+    font-size: 14px;
+    line-height: 24px;
+    color: #041a2f;
+    min-width:1350px;
+} 
+
+#header {
+    background-color: rgba(255,255,255,0.7);
+}
+#header-inner {
+    margin: 0 auto;
+    width: 1320px;
+}
+#logo {
+    float: left;
+    width: 55px;
+    margin-left: 30px;
+    margin-top: -2px;
+}
+#logo img {
+    width: 100%;
+}
+#gnb {
+    float: right;
+}
+#gnb li {
+    float: left;
+    padding: 20px 15px;
+    font-family: 'LeeSeoyun';
+    font-size: 18px;
+    font-weight: 700;
+    transform: skew(-0.1deg);
+}
+
+
+.mb .swiper-slide {
+    position: relative;
+}
+.mb .swiper-slide img {
+    width: 100%;
+}
+.mb .pagination-left {
+    left: 50%;
+    margin-left: -34%;
+    width: 1320px;
+    text-align: left;
+    margin-bottom: 60px;
+}
+/*불릿모양. swiper-pagination-bullet-active 클래스가 현재 색상이 들어간 부분 나타냄*/
+.swiper-pagination-bullet-active{
+    width:30px;
+    border-radius: 4px;
+    background-color: #26254e;
+}
+
+#main-brand {
+    background: url(../images/main-brand.png) no-repeat;
+    height: 869px;
+    padding-top: 60px;
+}
+#main-brand-inner {
+    margin: 0 auto;
+    width: 1320px;
+    position: relative;
+}
+#main-brand-inner .bp1 {
+    width: 40%;
+    position: absolute;
+    top: -255px;
+    left: 19%;
+}
+#main-brand-inner .bp2 {
+    width: 30%;
+    position: absolute;
+    top: -380px;
+    left: 7%; 
+}
+#main-brand-inner .brand-text {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 500;
+    position: absolute;
+    right: 13%;
+    top: -170px;
+}
+#main-brand-inner .brand-text .btn-tag {
+    display: inline-block;
+    padding: 10px 15px;
+    width: 200px;
+    margin-top: 150px;
+    color: #fff;
+    background: url(../images/button.png) no-repeat;
+}
+
+#service {
+    background: url(../images/main-sevice.png) no-repeat;
+    background-size: cover;
+}
+#service-inner {
+    margin: 0 auto;
+    width: 1320px;
+    text-align: center;
+}
+#service-inner dl {
+    float: left;
+    width: 25.3%;
+    margin: 90px 8% 0 0;
+}
+#service-inner dl dt img {
+    width: 100%;
+}
+#service-inner dl:nth-child(2) dt {
+    margin-top: 66px;
+}
+#service-inner dl:nth-child(3) dt {
+    margin-top: 22px;
+}
+#service-inner dl dd {
+    color: #fff;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+#service-inner dl dd .tt {
+    font-family: 'LeeSeoyun';
+    font-size: 30px;
+}
+
+#characters {
+    width: 1320px;
+    margin: 0 auto;
+    height: 869px;
+}
+.ch-left {
+    float: left;
+    margin-left: 12%;
+}
+.ch-right {
+    float: right;
+    margin-right: 12%;
+}
+.ch2 .ch-text {
+    text-align: right;
+    margin-left: 40%;
+}
+.ch-text h2 {
+    font-family: 'LeeSeoyun';
+    font-size: 36px;
+}
+.ch-text .ch-key {
+    margin: 25px 0 15px 0;
+    line-height: 24px;
+    font-size: 18px;
+}
+.ch1 .ch-img a{
+    display: inline-block;
+    width: 447px;
+    height: 383px;
+    background: url(../images/ch1-off.png) no-repeat;
+}
+.ch1 .ch-img a:hover {
+    background: url(../images/ch1.png) no-repeat;
+}
+.ch2 .ch-img a {
+    display: inline-block;
+    width: 216px;
+    height: 230px;
+    background: url(../images/ch2.png) no-repeat;
+}
+.ch2 .ch-img a:hover {
+    background: url(../images/ch2-on.png) no-repeat;
+}
+
+#event {
+    background: url(../images/main-event.png) no-repeat;
+    height: 869px;
+}
+#event-inner {
+    margin: 0 auto;
+    width: 1320px;
+    text-align: center;
+}
+#event-inner h1 {
+    font-family: 'LeeSeoyun';
+    font-size: 48px;
+    color: #fff;
+    padding: 150px 0 20px 0;
+}
+#event-inner a {
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 1056px;
+}
+#event-inner a img {
+    width: 100%;
+}
+
+#app {
+    background: url(../images/main-app.png) no-repeat;
+    background-size: cover;
+}
+#app-inner {
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+#app-inner .text-left {
+    float: left;
+    margin-top: 100px;
+}
+#app-inner .img-right {
+    float: right;
+}
+#app-inner h1 {
+    font-size: 48px;
+    margin-bottom: 140px;
+}
+#app-inner p {
+    font-size: 24px;
+    line-height: 60px;
+}
+
+#choice {
+    text-align: center;
+}
+#choice h1 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'LeeSeoyun';
+    font-size: 48px;
+}
+#choice .p {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+.btn1 {
+    width: 338px;
+}
+.btn2 {
+    width: 522px;
+}
+.btn1, .btn2 {
+    margin: 0 auto;
+}
+.btn {
+    font-size: 14px;
+    width: 130px;
+    padding: 10px;
+    border: 1px solid #041a2f;
+    border-radius: 30px;
+    float: left;
+    margin-right: 17px;
+    margin-bottom: 18px;
+    font-family: 'SCoreDream';
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+.btn:hover, .btn:focus {
+    background-color: #041a2f;
+    color: #fff;
+}
+@media only screen and (max-width: 130px){
+    .btn{ margin-bottom: 18px; }
+}
+.btn1 input:nth-child(2), .btn2 input:nth-child(3) {
+    margin-right: 0;
+}
+@keyframes movement {
+    0% {
+      background-position: 0px 0px;
+    }
+
+    100% {
+      background-position: 1920px 0px;
+    }
+  }
+.book1 {
+    width: 100%;
+    height: 222px;
+    background: url(./../images/book/book1.png) repeat-x left top;
+    background-size: auto 222px;
+    animation: movement 20s linear infinite;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.book2 {
+    width: 100%;
+    height: 222px;
+    background: url(./../images/book/book2.png) repeat-x left top;
+    background-size: auto 222px;
+    animation: movement 20s linear reverse infinite;
+}
+
+#footer {
+    background: url(./../images/footer-back.png) repeat;
+    height: 262px;
+}
+#footer-inner {
+    margin: 0 auto;
+    width: 1320px;
+    font-weight: 300;
+    position: relative;
+}
+#footer-inner ul li {
+    float: left;
+    padding: 35px 10px 25px 10px;
+}
+#footer-inner ul li:nth-child(1) {
+    padding-left: 0;
+}
+#footer-inner p {
+    padding-bottom: 15px;
+}
+#footer-inner .app-download {
+    position: absolute;
+    right: 3%;
+    top: 12%;
+   width: 190px;
+}
+#footer-inner .app-download img {
+    width: 45%;
+    vertical-align: middle;
+    margin-left: 20px;
+}

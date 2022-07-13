@@ -1,0 +1,243 @@
+@charset "utp-8";
+@font-face {
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol {
+    list-style: none;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    font-family: 'SCoreDream';
+    font-size: 14px;
+    line-height: 24px;
+    color: #041a2f;
+    min-width:1350px;
+} 
+
+#header {
+    background-color: rgba(255,255,255,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+}
+#header-inner {
+    margin: 0 auto;
+    width: 1320px;
+}
+#logo {
+    float: left;
+    width: 55px;
+    margin-left: 30px;
+    margin-top: 4px;
+}
+#logo img {
+    width: 100%;
+}
+#gnb {
+    float: right;
+}
+#gnb li {
+    float: left;
+    padding: 20px 15px;
+    font-family: 'LeeSeoyun';
+    font-size: 18px;
+    font-weight: 700;
+    transform: skew(-0.1deg);
+}
+
+#title {
+    height: 461px;
+    margin-top: 64px;
+}
+#title img {
+    float: right;
+    width: 80%;
+    margin-top: 80px;
+}
+
+#container {
+    background: url(./../images/sub3/bg.jpg) no-repeat;
+    height: 7035px;
+}
+#container-inner {
+    margin: 0 auto;
+    width: 1320px;
+}
+#produce {
+    padding-top: 206px;
+    position: relative;
+}
+#produce img {
+    display: block;
+    filter: drop-shadow(8px 8px 20px #000); 
+}
+#produce p {
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 200;
+    position: absolute;
+    top: 523px;
+    left: 483px;
+    color: #423013;
+}
+
+.ch {
+    margin-top: 549px;
+    background: url(./../images/sub3/letter.png) no-repeat;
+    height: 1245px;
+    position: relative;
+}
+.ch img {
+    position: absolute;
+    top: -205px;
+    left: 372px;
+}
+.ch .ch-text {
+    position: absolute;
+    top: 540px;
+    left: 150px;
+    text-align: center;
+}
+.ch h1 {
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: normal;
+}
+.ch .bold {
+    font-weight: 500;
+}
+.ch p {
+    padding-top: 85px;
+    padding-bottom: 101px;
+    font-size: 24px;
+    line-height: 60px;
+    font-weight: 200;
+}
+
+.colorcode {
+    display: flex;
+    flex-flow: row;
+}
+.color {
+    width: 440px;
+    height: 150px;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+.color:hover {
+    filter: brightness(90%);
+}
+.color1 {
+    background-color: #4d5931;
+    color: #fff;
+}
+.color2 {
+    background-color: #fde094;
+}
+.color3 {
+    background-color: #fff;
+}
+.color4 {
+    background-color: #d6ce8d;
+}
+.color5 {
+    background-color: #fde094;
+}
+.color6 {
+    background-color: #d1c7c5;
+}
+.ch .ch-text2 {
+    position: absolute;
+    top: 540px;
+    left: 66px;
+    text-align: center;
+}
+
+.emoticon {
+    margin-top: 291px;
+}
+.emo-in {
+    margin-bottom: 145px;
+    vertical-align: middle;
+}
+.emo-in .left {
+    float: left;
+    padding-left: 80px;
+}
+.emo-in .right {
+    float: right;
+    padding-right: 50px;
+}
+.emo-in .middle {
+    padding-left: 154px;
+}
+.emo-text {
+    font-family: 'LeeSeoyun';
+    text-align: center;
+    color: #fff;
+    padding-top: 130px;
+}
+.emo-text h1 {
+    font-size: 84px;
+    line-height: 70px;
+    padding-bottom: 30px;
+}
+.emo-text p {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+#footer {
+    background: url(./../images/footer-back.png) repeat;
+    height: 262px;
+}
+#footer-inner {
+    margin: 0 auto;
+    width: 1320px;
+    font-weight: 300;
+    position: relative;
+}
+#footer-inner ul li {
+    float: left;
+    padding: 35px 10px 25px 10px;
+}
+#footer-inner ul li:nth-child(1) {
+    padding-left: 0;
+}
+#footer-inner p {
+    padding-bottom: 15px;
+}
+#footer-inner .app-download {
+    position: absolute;
+    right: 3%;
+    top: 12%;
+   width: 190px;
+}
+#footer-inner .app-download img {
+    width: 45%;
+    vertical-align: middle;
+    margin-left: 20px;
+}
