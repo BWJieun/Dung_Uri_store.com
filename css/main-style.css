@@ -229,6 +229,7 @@ body {
     width: 1320px;
     margin: 0 auto;
     padding-top: 60px;
+    position: relative;
 }
 #app-inner .text-left {
     float: left;
@@ -245,6 +246,27 @@ body {
     font-size: 24px;
     line-height: 60px;
 }
+#app-inner .download {
+    position: absolute;
+    top: 576px;
+    left: 260px;
+    text-align: right;
+    display: flex;
+    margin-left: 150px;
+}
+#app-inner .download p {
+    padding-top: 188px;
+    padding-right: 32px;
+    font-family: 'GyeonggiBatang';
+    font-size: 14px;
+    line-height: 16px;
+    transform: skew(-0.1deg);
+}
+#app-inner .download img {
+    width: 220px;
+    height: 220px;
+}
+
 
 #choice {
     text-align: center;
